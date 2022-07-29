@@ -1,0 +1,28 @@
+[
+  {
+    "_id": {
+      "$oid": "62a6dcc676e7d93c3c9a3a9e"
+    },
+    "password": "$2a$10$AT/rvHx4U.QQvnBbtFIXv.t1Kfy9ZNZ2Ra/wn7DyaeAX.t0QGghem",
+    "token": "ec065064-b987-4806-a163-f28b662e8dd6",
+    "verified_email": false,
+    "verified_email_token_link": "dbb2addb-2794-4fc4-8a57-ab5c49a2a189",
+    "verified_email_token": "1234",
+    "mode": "dark",
+    "status": "active",
+    "uuid": "f74a8c1c-0036-4f92-a557-a1bebfefad65",
+    "updated_at": {
+      "$numberLong": "1655102662245"
+    },
+    "email": "hello@world.com",
+    "insert_stamp": {
+      "$numberLong": "1655102662245"
+    },
+    "auto": null,
+    "admin": true,
+    "name": "Hello",
+    "price": "SOME_STRIPE_PRICE_ID",
+    "sell_address": {},
+    "phone_number": ""
+  }
+]

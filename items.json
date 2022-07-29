@@ -1,0 +1,20 @@
+[
+  {
+    "_id": {
+      "$oid": "62e24f70e84a60368c1beae0"
+    },
+    "ItemId": "62c56e8cce7e563ff72aa1b6",
+    "display": true,
+    "location": {
+      "type": "Point",
+      "coordinates": [-122.1881808, 37.4044209]
+    },
+    "LocationDescription": "This is a great location.",
+    "Description": "A good description.",
+    "title": "A solid title.",
+    "status": "active",
+    "LocationSummary": "A short summary.",
+    "category": "consumer",
+    "ItemType": "product"
+  }
+]

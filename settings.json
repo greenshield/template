@@ -1,0 +1,14 @@
+[
+  {
+    _id: {
+      $oid: "62a8444ce60efc1a2956d3de",
+    },
+    settings: true,
+    last_refresh: {
+      $numberLong: "1655739000016",
+    },
+    last_delete: {
+      $numberLong: "1655739000793",
+    },
+  },
+];

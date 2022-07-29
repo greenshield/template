@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "cwd": "/server/template/",
+      "name": "template",
+      "script": "./server.js",
+      "node_args": "-r esm --max-old-space-size=2048",
+      "watch": ["./server.js"],
+      "instances": "1",
+      "exec_mode": "fork",
+      "watch_options": {
+        "persistent": true,
+        "ignoreInitial": false
+      }
+    }
+  ]
+}

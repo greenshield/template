@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.noselect,
+.noselect *,
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.selectable {
+  -webkit-touch-callout: text !important; /* iOS Safari */
+  -webkit-user-select: text !important; /* Safari */
+  -khtml-user-select: text !important; /* Konqueror HTML */
+  -moz-user-select: text !important; /* Old versions of Firefox */
+  -ms-user-select: text !important; /* Internet Explorer/Edge */
+  user-select: text !important; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.MuiDrawer-paper {
+  z-index: auto !important;
+}
+
+.filepond--item {
+  transform: none !important;
+  position: relative !important;
+}
+
+.no-back,
+.filepond--panel-root {
+  background: transparent !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.container > p {
+  font-size: 1rem;
+}
+
+.container > em {
+  font-size: 0.8rem;
+}
+
+.dropzone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  transition: border 0.24s ease-in-out;
+}
+
+.dropzone:focus {
+  border-color: #2196f3;
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+}
+
+.filepond--drop-label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: dashed;
+  color: #bdbdbd;
+  outline: none;
+  position: relative !important;
+  height: 180px !important;
+}
+
+.filepond--drop-label:hover {
+  border-color: #2196f3;
+}
+
+.filepond--list {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.filepond--root {
+  contain: none !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+.filepond--panel-root {
+  contain: none !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+.filepond--list {
+  position: static !important;
+}
+
+.filepond--list-scroller {
+  position: relative !important;
+  transform: none !important;
+}
+
+.shadowed .MuiSwitch-thumb {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px !important;
+}
+
+body {
+  touch-action: pan-x pan-y;
+}
