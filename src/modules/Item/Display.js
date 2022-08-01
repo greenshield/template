@@ -58,6 +58,7 @@ function Display(props) {
   nextNoon.setHours(12, 0, 0, 0);
   const [barPosition, setBarPosition] = React.useState("absolute");
   const [barOpen, setBarOpen] = React.useState(false);
+  const [isFavorite, setIsFavorite] = React.useState(false);
 
   const [feedbackDetails, setFeedbackDetails] = React.useState({
     phone: "",
@@ -102,8 +103,18 @@ function Display(props) {
         var _l = Object.assign({}, props.item);
         _l.item_user = result.data;
         props.set("item", _l);
+
+        if (isFavorite !== _l.item_user.favorite) {
+          setIsFavorite(_l.item_user.favorite);
+        }
       });
   };
+
+  React.useEffect(() => {
+    if (props.item.item_user && isFavorite !== props.item.item_user.favorite) {
+      setIsFavorite(props.item.item_user.favorite);
+    }
+  }, [props.item, isFavorite]);
 
   const handleClose = () => {
     //set("item", null);
@@ -117,7 +128,7 @@ function Display(props) {
   const submitFavorite = async () => {
     var favorite = props.item.item_user ? props.item.item_user.favorite : false;
     favorite = !favorite;
-
+    setIsFavorite(!isFavorite);
     await axios
       .post("/remote/items/favorite", {
         ItemId: params.ItemId,
@@ -438,11 +449,7 @@ function Display(props) {
                   }}
                   onClick={submitFavorite}
                 >
-                  {l && l.item_user && l.item_user.favorite ? (
-                    <CheckedFavoriteIcon />
-                  ) : (
-                    <FavoriteIcon />
-                  )}
+                  {isFavorite ? <CheckedFavoriteIcon /> : <FavoriteIcon />}
                 </IconButton>
 
                 <IconButton
